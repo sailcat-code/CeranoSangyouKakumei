@@ -1,0 +1,4 @@
+#Tue Jan 13 23:01:21 CST 2026
+shadowDistance=384.0
+shadowMapResolution=4096
+SHADOW_ENTITY=1

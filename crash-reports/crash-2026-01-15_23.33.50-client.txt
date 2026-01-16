@@ -1,0 +1,211 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 26-1-15 œ¬ŒÁ11:33
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:744)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:311)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:552)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+	at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+Caused by: java.lang.NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:106)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at mmmlibx.lib.multiModel.texture.MultiModelManager.addModelClass(MultiModelManager.java:103)
+	at mmmlibx.lib.multiModel.texture.MultiModelManager.load(MultiModelManager.java:79)
+	at mmmlibx.lib.FileLoaderBase.preLoad(FileLoaderBase.java:107)
+	at mmmlibx.lib.FileLoaderBase.decodeZip(FileLoaderBase.java:52)
+	at mmmlibx.lib.multiModel.texture.MultiModelManager.decodeZip(MultiModelManager.java:71)
+	at mmmlibx.lib.FileLoaderBase.execute(FileLoaderBase.java:27)
+	at mmmlibx.lib.multiModel.texture.MultiModelManager.execute(MultiModelManager.java:63)
+	at mmmlibx.lib.MMMLib.loaded(MMMLib.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:742)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.jetbrains.java.decompiler.main.extern.IResultSaver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 65 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 733797280 bytes (699 MB) / 1719664640 bytes (1640 MB) up to 8589934592 bytes (8192 MB)
+	JVM Flags: 6 total; -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmn1228m -Xmx8192m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_E7 90 mods loaded, 90 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJ	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJ	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJ	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJ	CodeChickenCore{1.4.10} [CodeChicken Core] (minecraft.jar) 
+	UCHIJ	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) 
+	UCHIJ	InputFix{1.7.10-v6} [InputFix] (minecraft.jar) 
+	UCHIJ	itemphysic{1.1.5} [ItemPhysic] (minecraft.jar) 
+	UCHIJ	OldModelLoader{1.0} [OldModelLoader] (minecraft.jar) 
+	UCHIJ	NotEnoughItems{2.8.50-GTNH} [NotEnoughItems] (NotEnoughItems-2.8.50-GTNH.jar) 
+	UCHIJ	OmniOcularCore{1.0} [Omni Ocular Core] (minecraft.jar) 
+	UCHIJ	SomniaCore{1.3.1.55} [SomniaCore] (minecraft.jar) 
+	UCHIJ	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJ	FoamFixCore{1.0.0} [FoamFixCore] (minecraft.jar) 
+	UCHIJ	DamageIndicatorsMod{3.3.2} [Damage Indicators] ([1.7.10]DamageIndicatorsMod-3.3.2.jar) 
+	UCHIJ	IC2{2.2.828-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.828-experimental.jar) 
+	UCHIJ	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (Advanced Solar Panels-3.5.1.jar) 
+	UCHIJ	adventurebackpack{1.4.9-GTNH} [Adventure Backpack] (adventurebackpack-1.4.9-GTNH.jar) 
+	UCHIJ	armorchroma{1.2} [Armor Chroma] (armorchroma-1.2-1.7.10.jar) 
+	UCHIJ	BambooMod{Minecraft@MC_VERSION@ var@VERSION@} [BambooMod-±À√Œ∫∫ªØ] (Bamboo-2.6.8.5.jar) 
+	UCHIJ	bettersprinting{2.3.0} [Better Sprinting] (BetterSprinting-1.7.10-v2.3.0.jar) 
+	UCHIJ	BetterTitleScreen{1.7.10-1.1} [Better Title Screen] (BetterTitleScreen-1.7.10-1.1.jar) 
+	UCHIJ	BiblioCraft{1.11.7} [BiblioCraft] (BiblioCraft[v1.11.7][MC1.7.10].jar) 
+	UCHIJ	CoFHCore{1.7.10R3.1.4} [CoFH Core] (CoFHCore-[1.7.10]3.1.4-329.jar) 
+	UCHIJ	BuildCraft|Core{7.1.27} [BuildCraft] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Transport{7.1.27} [BC Transport] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Builders{7.1.27} [BC Builders] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Robotics{7.1.27} [BC Robotics] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Energy{7.1.27} [BC Energy] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Silicon{7.1.27} [BC Silicon] (buildcraft-7.1.27.jar) 
+	UCHIJ	BuildCraft|Factory{7.1.27} [BC Factory] (buildcraft-7.1.27.jar) 
+	UCHIJ	candycraftmod{Beta 1.3} [CandyCraft] (CandyCraft-1.3.jar) 
+	UCHIJ	colourfulportalsmod{1.4.3} [Colourful Portals] (ColourfulPortals-1.4.3.jar) 
+	UCHIJ	craftguide{1.7.1.0} [CraftGuide] (CraftGuide-1.7.1.0-forge.jar) 
+	UCHIJ	DurabilityShow{1.2.0} [Durability Show] (DurabilityShow-1.7.10-1.2.0.jar) 
+	UCHIJ	TwilightForest{2.4.3} [The Twilight Forest] (TwilightForest-2.4.3.jar) 
+	UCHIJ	etfuturum{2.6.2} [Et Futurum Requiem] (etfuturum-2.6.2.jar) 
+	UCHIJ	foamfix{@VERSION@} [FoamFix] (FoamFix-1.7.10-universal-1.0.0.jar) 
+	UCHIJ	FoodCraft{1.2.0} [FoodCraft(FoodCraft)] (FoodCraft-16.8.9-1.2.1-1.7.10.jar) 
+	UCHIJ	Forestry{4.2.16.64} [Forestry for Minecraft] (forestry_1.7.10-4.2.16.64.jar) 
+	UCHIJ	FpsReducer{mc1.7.10-1.10.3} [FPS Reducer] (FpsReducer-mc1.7.10-1.10.3.jar) 
+	UCHIJ	GalacticraftCore{3.0.12} [Galacticraft Core] (Galacticraft-1.7-3.0.12.504.jar) 
+	UCHIJ	GalacticraftMars{3.0.12} [Galacticraft Planets] (Galacticraft-1.7-3.0.12.504.jar) 
+	UCHIJ	inventorytweaks{1.59-dev-152-cf6e263} [Inventory Tweaks] (InventoryTweaks-1.59-dev-152.jar) 
+	UCHIJ	itlt{1.0.3} [It's the little things] (itlt-1.7.x-1.0.3.jar) 
+	UCHIJ	journeymap{5.2.10} [JourneyMap] (journeymap-1.7.10-5.2.10-unlimited.jar) 
+	UCHIJ	lmmx{1.0} [lmmx] (littleMaidMobX-1.7.x_0.1.1.jar) 
+	UCHIE	MMMLibX{1.7.x-srg-1} [MMMLibX] (littleMaidMobX-1.7.x_0.1.1.jar) 
+	UCHIJ	zabuton{1.0} [zabuton] (littleMaidMobX-1.7.x_0.1.1.jar) 
+	UCHIJ	llor{1.0.7-mc1.7.10} [Light Level Overlay Reloaded] (LLOverlayReloaded-1.0.7-mc1.7.10.jar) 
+	UCHIJ	LunatriusCore{1.1.2.21} [LunatriusCore] (LunatriusCore-1.7.10-1.1.2.21-universal.jar) 
+	UCHIJ	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJ	NEIAddons{1.12.15.41} [NEI Addons] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|Developer{1.12.15.41} [NEI Addons: Developer Tools] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|AppEng{1.12.15.41} [NEI Addons: Applied Energistics 2] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|Botany{1.12.15.41} [NEI Addons: Botany] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|Forestry{1.12.15.41} [NEI Addons: Forestry] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|CraftingTables{1.12.15.41} [NEI Addons: Crafting Tables] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	NEIAddons|ExNihilo{1.12.15.41} [NEI Addons: Ex Nihilo] (neiaddons-1.12.15.41-mc1.7.10.jar) 
+	UCHIJ	neiintegration{1.1.2} [NEI Integration] (NEIIntegration-MC1.7.10-1.1.2.jar) 
+	UCHIJ	notenoughpets{2.4.1} [°ÏeNot Enough Pets°Ïr] (NotEnoughPets-1.7.10-2.4.1.jar) 
+	UCHIJ	Waila{1.5.10} [Waila] (Waila-1.5.10_1.7.10.jar) 
+	UCHIJ	OmniOcular{1.7.10-1.0build103} [Omni Ocular] (OmniOcular-1.7.10-1.0build103.jar) 
+	UCHIJ	Railcraft{9.12.2.1} [Railcraft] (Railcraft_1.7.10-9.12.2.1.jar) 
+	UCHIJ	Schematica{1.7.6.131} [Schematica] (Schematica-1.7.10-1.7.6.131-universal.jar) 
+	UCHIJ	simpleleather{1.7.10-1.0} [Simple Leather] (simpleleather-1.7.10-1.0.jar) 
+	UCHIJ	skidgen{1.1} [°Ï6Skid°ÏaGen] (SkidGen-1.0.0.jar) 
+	UCHIJ	Somnia{-au} [Somnia] (Somnia-1.4.8.55.jar) 
+	UCHIJ	ThermalFoundation{1.7.10R1.2.6} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.2.6-118.jar) 
+	UCHIJ	ThermalExpansion{1.7.10R4.1.5} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.1.5-248.jar) 
+	UCHIJ	thetooltooltiptool{0.3.0} [The Tool Tooltip Tool] (TheToolTooltipTool-1.7.10-0.3.0-4-universal.jar) 
+	UCHIJ	unimixins{0.2.1} [UniMixins] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	unimixins-mixin{0.2.1} [UniMixins: Mixin (UniMix)] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	unimixins-compat{0.2.1} [UniMixins: Compatibility] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	mixingasm{0.3} [UniMixins: Mixingasm] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	spongemixins{2.0.1} [UniMixins: SpongeMixins] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	mixinbooterlegacy{1.2.1} [UniMixins: MixinBooterLegacy] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	gtnhmixins{2.2.0} [UniMixins: GTNHMixins] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	mixinextras{0.2.1} [UniMixins: MixinExtras] (unimixins-all-1.7.10-0.2.1.jar) 
+	UCHIJ	VeinMiner{0.36.0_1.7.10-28a7f13} [Vein Miner] (VeinMiner-1.7.10-0.36.0.496+28a7f13.jar) 
+	UCHIJ	VeinMinerModSupport{0.36.0_1.7.10-28a7f13} [Mod Support] (VeinMiner-1.7.10-0.36.0.496+28a7f13.jar) 
+	UCHIJ	VillageNames{4.4.13} [°Ï6Village Names°Ïr] (VillageNames-1.7.10-4.4.13.jar) 
+	UCHIJ	wailafeatures{0.1.0} [WAILA Features] (WAILA-features-1.7.10-0.1.0.jar) 
+	UCHIJ	WailaHarvestability{1.1.6} [Waila Harvestability] (WailaHarvestability-mc1.7.10-1.1.6.jar) 
+	UCHIJ	wanionlib{1.7.10-1.8} [WanionLib] (WanionLib-1.7.10-1.8.jar) 
+	UCHIJ	weaponmod{v1.14.3} [Balkon's WeaponMod] (weaponmod-1.14.3.jar) 
+	UCHIJ	worldedit{6.1.1} [WorldEdit] (worldedit-forge-mc1.7.10-6.1.1-dist.jar) 
+	UCHIJ	WorldEditCuiFe{1.0.7} [WorldEdit CUI Forge Edition] (WorldEditCuiFe-v1.0.7-mf-1.7.10-10.13.4.1566.jar) 
+	UCHIJ	yarr_cutemobmodels{1.0.9} [Cute Mob Models] (yarrcutemobmodels-1.0.9-1.7.10.jar) 
+	UCHIJ	zyinhud{1.3.9} [Zyin's HUD] (ZyinsHUD-(1.7.10)-v.1.3.9.jar) 
+	UCHIJ	UniDict{1.7.10-2.9.2} [UniDict] (UniDict-1.7.10-2.9.2.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4425' Renderer: 'Intel(R) HD Graphics 4000'
+	CoFHCore: -[1.7.10]3.1.4-329
+	ThermalFoundation: -[1.7.10]1.2.6-118
+	ThermalExpansion: -[1.7.10]4.1.5-248
+	Forestry : Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Optifine
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	Mixins in Stacktrace: 
+		cpw.mods.fml.common.LoadController:
+			mixins.gtnhmixins.json:LateMixinOrchestrationMixin from mod (unknown)
+			mixin.mixinbooterlegacy.json:LoadControllerMixin from mod (unknown)
+	OptiFine Version: OptiFine_1.7.10_HD_U_E7
+	Render Distance Chunks: 16
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: TrueLightFX-Lite.zip
+	OpenGlVersion: 4.0.0 - Build 10.18.10.4425
+	OpenGlRenderer: Intel(R) HD Graphics 4000
+	OpenGlVendor: Intel
+	CpuCount: 8

@@ -1,0 +1,10 @@
+[2026-01-14 14:32:59] [INFO]: I18nUpdate Mod 3.7.0 is loaded in 1.7.10 with Forge
+[2026-01-14 14:32:59] [DEBUG]: Minecraft path: C:\Greenified\.minecraft\versions\XPlus OptiReady based on Minecraft 1.7.10 (Forge)
+[2026-01-14 14:32:59] [DEBUG]: Local Storage Pos: C:\Users\Cera\AppData\Local
+[2026-01-14 14:32:59] [INFO]: Using fastest url: http://downloader1.meitangdehulu.com:22943/
+[2026-01-14 14:32:59] [DEBUG]: Using asset root: http://downloader1.meitangdehulu.com:22943/
+[2026-01-14 14:32:59] [DEBUG]: Both temp and current file not found
+[2026-01-14 14:32:59] [DEBUG]: Local file C:\Users\Cera\AppData\Local\.i18nupdatemod\1.10.2\Minecraft-Mod-Language-Modpack-1-10-2.zip not exist.
+[2026-01-14 14:32:59] [INFO]: Downloading: http://downloader1.meitangdehulu.com:22943/Minecraft-Mod-Language-Modpack-1-10-2.zip -> C:\Users\Cera\AppData\Local\.i18nupdatemod\1.10.2\Minecraft-Mod-Language-Modpack-1-10-2.zip.tmp
+[2026-01-14 14:32:59] [WARNING]: Error while downloading: java.io.FileNotFoundException: http://downloader1.meitangdehulu.com:22943/Minecraft-Mod-Language-Modpack-1-10-2.zip
+[2026-01-14 14:32:59] [WARNING]: Failed to update resource pack: java.io.FileNotFoundException: Tmp file not found.
